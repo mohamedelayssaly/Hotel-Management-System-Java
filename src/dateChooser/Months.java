@@ -1,0 +1,137 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ */
+package dateChooser;
+
+
+public class Months extends javax.swing.JPanel {
+
+  private  Event event;
+  private int m;
+  
+    public Months() {
+        initComponents();
+    }
+
+ private void addEvent(){
+     for(int i=0;i<getComponentCount(); i++){
+         
+         ((Button) getComponent(i)).setEvent(event);
+     }
+ }
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        cmd1 = new dateChooser.Button();
+        cmd2 = new dateChooser.Button();
+        cmd3 = new dateChooser.Button();
+        cmd4 = new dateChooser.Button();
+        cmd5 = new dateChooser.Button();
+        cmd6 = new dateChooser.Button();
+        cmd7 = new dateChooser.Button();
+        cmd8 = new dateChooser.Button();
+        cmd9 = new dateChooser.Button();
+        cmd10 = new dateChooser.Button();
+        cmd11 = new dateChooser.Button();
+        cmd12 = new dateChooser.Button();
+
+        setBackground(new java.awt.Color(255, 255, 255));
+        setLayout(new java.awt.GridLayout(4, 4));
+
+        cmd1.setText("January");
+        cmd1.setName("1"); // NOI18N
+        cmd1.setOpaque(true);
+        add(cmd1);
+
+        cmd2.setText("Ferruary");
+        cmd2.setName("2"); // NOI18N
+        cmd2.setOpaque(true);
+        cmd2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmd2ActionPerformed(evt);
+            }
+        });
+        add(cmd2);
+
+        cmd3.setText("March");
+        cmd3.setName("3"); // NOI18N
+        cmd3.setOpaque(true);
+        add(cmd3);
+
+        cmd4.setText("April");
+        cmd4.setName("4"); // NOI18N
+        cmd4.setOpaque(true);
+        add(cmd4);
+
+        cmd5.setText("May");
+        cmd5.setName("5"); // NOI18N
+        cmd5.setOpaque(true);
+        add(cmd5);
+
+        cmd6.setText("June");
+        cmd6.setName("6"); // NOI18N
+        cmd6.setOpaque(true);
+        add(cmd6);
+
+        cmd7.setText("July");
+        cmd7.setName("7"); // NOI18N
+        cmd7.setOpaque(true);
+        add(cmd7);
+
+        cmd8.setText("August");
+        cmd8.setName("8"); // NOI18N
+        cmd8.setOpaque(true);
+        add(cmd8);
+
+        cmd9.setText("September");
+        cmd9.setName("9"); // NOI18N
+        cmd9.setOpaque(true);
+        add(cmd9);
+
+        cmd10.setText("October");
+        cmd10.setName("10"); // NOI18N
+        cmd10.setOpaque(true);
+        add(cmd10);
+
+        cmd11.setText("November");
+        cmd11.setName("11"); // NOI18N
+        cmd11.setOpaque(true);
+        add(cmd11);
+
+        cmd12.setText("December");
+        cmd12.setName("12"); // NOI18N
+        cmd12.setOpaque(true);
+        add(cmd12);
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void cmd2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmd2ActionPerformed
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
+        addEvent();
+    }
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private dateChooser.Button cmd1;
+    private dateChooser.Button cmd10;
+    private dateChooser.Button cmd11;
+    private dateChooser.Button cmd12;
+    private dateChooser.Button cmd2;
+    private dateChooser.Button cmd3;
+    private dateChooser.Button cmd4;
+    private dateChooser.Button cmd5;
+    private dateChooser.Button cmd6;
+    private dateChooser.Button cmd7;
+    private dateChooser.Button cmd8;
+    private dateChooser.Button cmd9;
+    // End of variables declaration//GEN-END:variables
+}

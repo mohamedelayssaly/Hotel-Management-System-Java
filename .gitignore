@@ -1,0 +1,17 @@
+# Compiled Java files
+*.class
+
+# NetBeans build output
+/build/
+/dist/
+
+# IDE temporary files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Private database configuration
+.env
+config.properties
